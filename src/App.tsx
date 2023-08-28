@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import { useState } from 'react'
+import mobilePic from "./assets/images/image-profile-mobile.webp";
+import "./App.css";
+import SocialContainer from "./Components/SocialContainer/SocialContainer";
+import ContactMeBtn from "./Components/ContactMeBtn/ContactMeBtn";
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="background">
+      <SocialContainer />
+      <div className="image-container">
+        <img src={mobilePic} alt="" />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <div className="welcome-container">
+        <h1>Nice to meet you! I'm Adams Keyes.</h1>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Based in the UK, I'm a front-end developer passionate about building
+          accessible web apps that users love.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <ContactMeBtn />
+    </div>
+  );
 }
 
-export default App
+export default App;

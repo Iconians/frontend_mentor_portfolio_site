@@ -1,0 +1,13 @@
+.social-container {
+  background-color: black;
+  color: white;
+}
+
+.social-icons-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly ;
+}
